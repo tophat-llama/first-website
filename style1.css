@@ -1,13 +1,19 @@
 body {
-    background-color: aliceblue;
+    background-color: rgb(224, 227, 230);
+
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    
+    box-sizing: content-box;
 }
 
-header {
+header, footer {
     background-color: deeppink;
 }
 
 .headerContainer {
-    background-color: rgb(59, 153, 235);
+    /* background-color: rgb(59, 153, 235); */
 
     display: inline-block;
     position: relative;
@@ -16,13 +22,13 @@ header {
 }
 
 .navbarULContainer {
-    background-color: rgb(20, 142, 142);
+    /* background-color: rgb(20, 142, 142); */
     list-style-type: none;
     display: inline-block;
 
     position: relative;
-    left: 0.2em;
-    top: 0.2em;
+    right: 0.2em;
+    bottom: 0.2em;
 }
 
 .navbarULContainer > li {
@@ -39,41 +45,177 @@ header {
 } */
 
 .gridMainContainer {
-    background-color: rgb(170, 140, 65);
+    /* background-color: rgb(170, 140, 65); */
+
+    color: inherit;
 }
 
 .introSectionContainer {
-    background-color: rgb(126, 255, 190);
+    /* background-color: rgb(126, 255, 190); */
+
+    color: inherit;
 }
 
 .gallerySectionContainer {
-    background-color: rgb(1, 33, 61);
+    /* background-color: rgb(1, 33, 61); */
+
+    color: inherit;
 }
 
 .eventsSectionContainer {
-    background-color: rgb(42, 157, 100);
+    /* background-color: rgb(42, 157, 100); */
+
+    border-style: outset;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: rgb(158, 40, 19);
+}
+
+.eventHeader {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://picsum.photos/300");
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    padding: 1rem;   
+
+    color: azure;
+}
+
+.eventHeader > h2 {
+    font-size: 6em;
+}
+
+.eventText {
+    padding: 1rem;
+
+    border-style: inset;
+    border-width: 2px 0px;
 }
 
 .coffeeDefinitionSectionContainer {
-    background-color: rgb(107, 177, 239);
+    /* background-color: rgb(107, 177, 239); */
+
+    width: 100%;
+}
+
+.coffeeHeader {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://picsum.photos/300");
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    padding: 1rem;   
+
+    color: azure;
+}
+
+.coffeeHeader > h2 {
+    font-size: 6em;
 }
 
 .facSectionContainer {
-    background-color: rgb(164, 179, 38);
+    /* background-color: rgb(164, 179, 38); */
+
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+}
+
+.facIntroContainer {
+    /* background-color: aliceblue; */
+
+    display: inline-block;
+
+    width: 100%;
+
+    border-style: outset;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: chartreuse;
+}
+
+.facItemContainer {
+    /* background-color: lemonchiffon; */
+
+    display: inline-block;
+
+    width: 30%;
+    margin: 1rem;
+
+    border-style: outset;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: chartreuse;
 }
 
 .coffeequizSectionContainer {
-    background-color: rgb(143, 54, 27);
+    /* background-color: rgb(143, 54, 27); */
+
+    width: 100%;
 }
 
 .testimonialSectionContainer {
-    background-color: rgb(139, 21, 21);
+    /* background-color: rgb(139, 21, 21); */
+
+    width: 100%;
+}
+
+.textimonialItem {
+    /* background-color: rgb(204, 22, 22); */
+
+    width: 80%;
+    margin: 3% auto;
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+
+    padding: 1em;
+
+    border-style: outset;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: chartreuse;
 }
 
 .triptychSectionContainer {
-    background-color: rgb(99, 87, 229);
+    /* background-color: rgb(99, 87, 229); */
+
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.textLeft {
+    /* background-color: rgb(231, 230, 235); */
+
+    width: 25%;
+}
+
+.imgCenter {
+    /* background-color: rgb(175, 173, 199); */
+
+    width: 50%;
+}
+
+.textRight {
+    /* background-color: rgb(240, 240, 244); */
+
+    width: 25%;
 }
 
 .footerContainer {
-    background-color: rgb(235, 97, 173);
+    /* background-color: rgb(235, 97, 173); */
+
+    width: 100%;
 }
