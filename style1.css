@@ -1,0 +1,79 @@
+body {
+    background-color: aliceblue;
+}
+
+header {
+    background-color: deeppink;
+}
+
+.headerContainer {
+    background-color: rgb(59, 153, 235);
+
+    display: inline-block;
+    position: relative;
+    left: 0.2em;
+    top: 0.2em;
+}
+
+.navbarULContainer {
+    background-color: rgb(20, 142, 142);
+    list-style-type: none;
+    display: inline-block;
+
+    position: relative;
+    left: 0.2em;
+    top: 0.2em;
+}
+
+.navbarULContainer > li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* .navLink {
+    background-color: rgb(128, 36, 128);
+} */
+
+/* .navLine {
+    background-color: rgb(43, 117, 75);
+} */
+
+.gridMainContainer {
+    background-color: rgb(170, 140, 65);
+}
+
+.introSectionContainer {
+    background-color: rgb(126, 255, 190);
+}
+
+.gallerySectionContainer {
+    background-color: rgb(1, 33, 61);
+}
+
+.eventsSectionContainer {
+    background-color: rgb(42, 157, 100);
+}
+
+.coffeeDefinitionSectionContainer {
+    background-color: rgb(107, 177, 239);
+}
+
+.facSectionContainer {
+    background-color: rgb(164, 179, 38);
+}
+
+.coffeequizSectionContainer {
+    background-color: rgb(143, 54, 27);
+}
+
+.testimonialSectionContainer {
+    background-color: rgb(139, 21, 21);
+}
+
+.triptychSectionContainer {
+    background-color: rgb(99, 87, 229);
+}
+
+.footerContainer {
+    background-color: rgb(235, 97, 173);
+}
