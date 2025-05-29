@@ -13,7 +13,7 @@ header, footer {
 }
 
 .headerContainer {
-    /* background-color: rgb(59, 153, 235); */
+    background-color: rgb(59, 153, 235);
 
     display: inline-block;
     position: relative;
@@ -22,7 +22,7 @@ header, footer {
 }
 
 .navbarULContainer {
-    /* background-color: rgb(20, 142, 142); */
+    background-color: rgb(20, 142, 142);
     list-style-type: none;
     display: inline-block;
 
@@ -36,34 +36,50 @@ header, footer {
     display: inline-block;
 }
 
-/* .navLink {
+.navLink {
     background-color: rgb(128, 36, 128);
-} */
+}
 
-/* .navLine {
+.navLine {
     background-color: rgb(43, 117, 75);
-} */
+}
 
 .gridMainContainer {
-    /* background-color: rgb(170, 140, 65); */
+    background-color: rgb(170, 140, 65);
 
-    color: inherit;
+    /* color: inherit; */
 }
 
 .introSectionContainer {
-    /* background-color: rgb(126, 255, 190); */
+    background-color: rgb(126, 255, 190);
 
-    color: inherit;
+    /* color: inherit; */
 }
 
 .gallerySectionContainer {
-    /* background-color: rgb(1, 33, 61); */
+    background-color: rgb(1, 33, 61);
 
-    color: inherit;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+
+    /* color: inherit; */
+}
+
+.gallerySideColumn {
+    background-color: lightgoldenrodyellow;
+
+    grid-column: 1 / span 3;
+}
+
+.gallerymainContainer {
+    background-color: darksalmon;
+
+    grid-column: 4 / span 9;
 }
 
 .eventsSectionContainer {
-    /* background-color: rgb(42, 157, 100); */
+    background-color: rgb(42, 157, 100);
 
     border-style: outset;
     border-radius: 2px;
@@ -96,7 +112,7 @@ header, footer {
 }
 
 .coffeeDefinitionSectionContainer {
-    /* background-color: rgb(107, 177, 239); */
+    background-color: rgb(107, 177, 239);
 
     width: 100%;
 }
@@ -119,7 +135,7 @@ header, footer {
 }
 
 .facSectionContainer {
-    /* background-color: rgb(164, 179, 38); */
+    background-color: rgb(164, 179, 38);
 
     display: flex;
     /* flex-direction: column; */
@@ -133,7 +149,7 @@ header, footer {
 }
 
 .facIntroContainer {
-    /* background-color: aliceblue; */
+    background-color: aliceblue;
 
     display: inline-block;
 
@@ -146,7 +162,7 @@ header, footer {
 }
 
 .facItemContainer {
-    /* background-color: lemonchiffon; */
+    background-color: lemonchiffon;
 
     display: inline-block;
 
@@ -160,19 +176,19 @@ header, footer {
 }
 
 .coffeequizSectionContainer {
-    /* background-color: rgb(143, 54, 27); */
+    background-color: rgb(143, 54, 27);
 
     width: 100%;
 }
 
 .testimonialSectionContainer {
-    /* background-color: rgb(139, 21, 21); */
+    background-color: rgb(139, 21, 21); 
 
     width: 100%;
 }
 
 .textimonialItem {
-    /* background-color: rgb(204, 22, 22); */
+    background-color: rgb(204, 22, 22);
 
     width: 80%;
     margin: 3% auto;
@@ -188,7 +204,7 @@ header, footer {
 }
 
 .triptychSectionContainer {
-    /* background-color: rgb(99, 87, 229); */
+    background-color: rgb(99, 87, 229);
 
     display: flex;
     flex-direction: row;
@@ -197,25 +213,25 @@ header, footer {
 }
 
 .textLeft {
-    /* background-color: rgb(231, 230, 235); */
+    background-color: rgb(231, 230, 235);
 
     width: 25%;
 }
 
 .imgCenter {
-    /* background-color: rgb(175, 173, 199); */
+    background-color: rgb(175, 173, 199);
 
     width: 50%;
 }
 
 .textRight {
-    /* background-color: rgb(240, 240, 244); */
+    background-color: rgb(240, 240, 244);
 
     width: 25%;
 }
 
 .footerContainer {
-    /* background-color: rgb(235, 97, 173); */
+    background-color: rgb(235, 97, 173);
 
     width: 100%;
 }
