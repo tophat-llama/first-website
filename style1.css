@@ -53,6 +53,8 @@ header, footer {
 .introSectionContainer {
     background-color: rgb(126, 255, 190);
 
+    padding: 1rem; 
+
     /* color: inherit; */
 }
 
@@ -76,6 +78,12 @@ header, footer {
     background-color: darksalmon;
 
     grid-column: 4 / span 9;
+
+}
+
+.gallerymainContainer img {
+    object-fit: fill;
+    display: block;
 }
 
 .eventsSectionContainer {
@@ -155,6 +163,8 @@ header, footer {
 
     width: 100%;
 
+    padding: 1em;
+
     border-style: outset;
     border-radius: 2px;
     border-width: 1px;
@@ -179,12 +189,16 @@ header, footer {
     background-color: rgb(143, 54, 27);
 
     width: 100%;
+
+    padding: 1em;
 }
 
 .testimonialSectionContainer {
     background-color: rgb(139, 21, 21); 
 
     width: 100%;
+
+    padding: 1em;
 }
 
 .textimonialItem {
