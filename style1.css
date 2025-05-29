@@ -97,7 +97,7 @@ header, footer {
 
 .eventHeader {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://picsum.photos/300");
-    height: 75vh;
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,7 +177,8 @@ header, footer {
     display: inline-block;
 
     width: 30%;
-    margin: 1rem;
+    margin: 0.5rem;
+    padding: 0.5em;
 
     border-style: outset;
     border-radius: 2px;
@@ -226,22 +227,17 @@ header, footer {
     width: 100%;
 }
 
-.textLeft {
+.textLeft, .textRight {
     background-color: rgb(231, 230, 235);
 
     width: 25%;
+    padding: 1rem;
 }
 
 .imgCenter {
     background-color: rgb(175, 173, 199);
 
     width: 50%;
-}
-
-.textRight {
-    background-color: rgb(240, 240, 244);
-
-    width: 25%;
 }
 
 .footerContainer {
