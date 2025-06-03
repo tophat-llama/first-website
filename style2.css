@@ -49,13 +49,13 @@ header, footer {
     display: inline-block;
 }
 
-.navLink {
+/* .navLink {
     background-color: rgb(128, 36, 128);
-}
+} */
 
-.navLine {
+/* .navLine {
     background-color: rgb(43, 117, 75);
-}
+} */
 
 .flexMainContainer {
     background-color: darkslategray;
@@ -76,7 +76,7 @@ header, footer {
 
     display: inline-block;
 
-    width: 100%;
+    /* width: 100%; */
 
     padding: 1em;
 
@@ -101,6 +101,8 @@ header, footer {
     margin: 1rem;
 
     padding: 0.4em;
+
+    text-wrap: wrap;
 
     border-style: outset;
     border-radius: 2px;

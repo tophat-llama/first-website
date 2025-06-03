@@ -27,15 +27,15 @@ function filterMenu() {
 
   for (var j = 0; j < menuItems.length; j++) {
     var item = menuItems[j];
-    var matchesInclude = false;
-    var matchesExclude = false;
+    var itemInclude = false;
+    var itemExclude = false;
 
     if (include.length === 0) {
-      matchesInclude = true; 
+      itemInclude = true; 
     } else {
       for (var k = 0; k < include.length; k++) {
         if (item.classList.contains(include[k])) {
-          matchesInclude = true;
+          itemInclude = true;
           break;
         }
       }
@@ -43,12 +43,12 @@ function filterMenu() {
 
     for (var m = 0; m < exclude.length; m++) {
       if (item.classList.contains(exclude[m])) {
-        matchesExclude = true;
+        itemExclude = true;
         break;
       }
     }
 
-    if (matchesInclude && !matchesExclude) {
+    if (itemInclude && !itemExclude) {
       item.classList.remove('hidden');
     } else {
       item.classList.add('hidden');

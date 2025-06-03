@@ -1,7 +1,7 @@
 body {
     background-color: rgb(224, 227, 230);
 
-    width: 80vw;
+    width: 100vw;
     max-width: 100%;
     margin: 0 auto;
     
@@ -49,13 +49,13 @@ header, footer {
     display: inline-block;
 }
 
-.navLink {
+/* .navLink {
     background-color: rgb(128, 36, 128);
-}
+} */
 
-.navLine {
+/* .navLine {
     background-color: rgb(43, 117, 75);
-}
+} */
 
 .gridMainContainer {
     background-color: rgb(170, 140, 65);
@@ -258,7 +258,7 @@ header, footer {
 .coffeequizSectionContainer {
     background-color: rgb(143, 54, 27);
 
-    width: 100%;
+    /* width: 100%; */
 
     padding: 1em;
 }
@@ -266,7 +266,7 @@ header, footer {
 .testimonialSectionContainer {
     background-color: rgb(139, 21, 21); 
 
-    width: 100%;
+    /* width: 100%; */
 
     padding: 1em;
 }
@@ -313,4 +313,27 @@ header, footer {
     background-color: rgb(235, 97, 173);
 
     width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .triptychSectionContainer {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .textLeft, .textRight, .textLeft p, .textRight p {
+        padding: 0.2rem;
+        width: 100%;
+    }
+
+    .imgCenter {
+        width: 100%;
+    }
+
+    .triptychSectionContainer img {
+        max-width: 100%;
+        height: auto;
+    }
 }
