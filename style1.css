@@ -1,7 +1,7 @@
 body {
     background-color: rgb(224, 227, 230);
 
-    width: 100%;
+    width: 80vw;
     max-width: 100%;
     margin: 0 auto;
     
@@ -10,15 +10,25 @@ body {
 
 header, footer {
     background-color: deeppink;
+    /* height: 20vh; */
 }
 
 .headerContainer {
     background-color: rgb(59, 153, 235);
 
+    height: 100%;
+    margin: auto;
+
+    font-size: 1.5em;
+    padding: 0 0.5em 0;
+
     display: inline-block;
-    position: relative;
-    left: 0.2em;
-    top: 0.2em;
+
+    
+
+    /* position: absolute;
+    left: 0.2rem;
+    top: 0.2rem; */
 }
 
 .navbarULContainer {
@@ -26,9 +36,12 @@ header, footer {
     list-style-type: none;
     display: inline-block;
 
-    position: relative;
-    right: 0.2em;
-    bottom: 0.2em;
+    font-size: 1.5em;
+    padding: 0 0.5em 0;
+
+    /* position: absolute;
+    right: 0.2rem;
+    bottom: 0.2rem; */
 }
 
 .navbarULContainer > li {
@@ -71,19 +84,39 @@ header, footer {
 .gallerySideColumn {
     background-color: lightgoldenrodyellow;
 
+    height: 80vh;
+    overflow: hidden;
+
     grid-column: 1 / span 3;
+}
+
+.gallerySideColumn img {
+    height: 20vh;
+    width: 90%;
+
+    margin: auto;
+}
+
+.gallerySideColumn p {
+    position: absolute;
+    bottom: 1px;
 }
 
 .gallerymainContainer {
     background-color: darksalmon;
+    
+    height: 80vh;
 
     grid-column: 4 / span 9;
 
 }
 
 .gallerymainContainer img {
-    object-fit: fill;
+    object-fit: cover;
     display: block;
+
+    height: 100%;
+    width: 100%;
 }
 
 .eventsSectionContainer {
@@ -96,8 +129,8 @@ header, footer {
 }
 
 .eventHeader {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://picsum.photos/300");
-    height: 75vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image06.jpg");
+    height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,6 +152,42 @@ header, footer {
     border-width: 2px 0px;
 }
 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .coffeeDefinitionSectionContainer {
     background-color: rgb(107, 177, 239);
 
@@ -127,7 +196,7 @@ header, footer {
 
 .coffeeHeader {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://picsum.photos/300");
-    height: 30vh;
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,7 +246,8 @@ header, footer {
     display: inline-block;
 
     width: 30%;
-    margin: 1rem;
+    margin: 0.5rem;
+    padding: 0.5em;
 
     border-style: outset;
     border-radius: 2px;
@@ -226,22 +296,17 @@ header, footer {
     width: 100%;
 }
 
-.textLeft {
+.textLeft, .textRight {
     background-color: rgb(231, 230, 235);
 
     width: 25%;
+    padding: 1rem;
 }
 
 .imgCenter {
     background-color: rgb(175, 173, 199);
 
     width: 50%;
-}
-
-.textRight {
-    background-color: rgb(240, 240, 244);
-
-    width: 25%;
 }
 
 .footerContainer {

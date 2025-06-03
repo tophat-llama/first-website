@@ -10,7 +10,7 @@
         <meta name="keywords" content="">
         
         <link rel="stylesheet" href="style3.css">
-        <script src="script.js" async></script>
+        <script src="scriptorder.js" async></script>
     </head>
     <body>
         <header>
@@ -19,13 +19,13 @@
             </section>
 
             <ul class="navbarULContainer">
-                <li class="navLink"><a href="www.google.co.uk">NAV1</a></li>
+                <li class="navLink"><a href="index.html">HOMEPAGE</a></li>
                 <li class="navLine">|</li>
-                <li class="navLink"><a href="www.google.co.uk">NAV2</a></li>
+                <li class="navLink"><a href="menu.html">OUR MENU</a></li>
                 <li class="navLine">|</li>
-                <li class="navLink"><a href="www.google.co.uk">NAV3</a></li>
+                <li class="navLink"><a href="orderform.html">ORDER FORM</a></li>
                 <li class="navLine">|</li>
-                <li class="navLink"><a href="www.google.co.uk">CHANGE MODE</a></li>
+                <li class="navLink"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CHANGE MODE JS</a></li>
             </ul>
             
         </header>
@@ -34,24 +34,48 @@
             <form class="formMainContainer">
                 <fieldset class="personaldetailsFieldset">
                     <legend>Your Details:</legend>
-                    
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+
+                    <label for="time">When you wanna pickup your order:</label><br>
+                    <input type="time" id="time" name="time"><br>
                 </fieldset>
 
                 <fieldset class="orderbasketFieldset">
                     <legend>Your Order:</legend>
+                    <ol>
+                        <li>ITEM 1</li>
+                        <li>ITEM 2</li>
+                        <li>ITEM 3</li>
+                    </ol>
                 </fieldset>
 
                 <fieldset class="allergensFieldset">
                     <legend>Allergens:</legend>
+                    <input type="radio" name="radiotest" value="test1">
+                    <label for="test1">Allergen 1</label><br>
+                    <input type="radio" name="radiotest" value="test2">
+                    <label for="test1">Allergen 2</label><br>
+                    <input type="radio" name="radiotest" value="test3">
+                    <label for="test1">Allergen 3</label><br>
                 </fieldset>
 
                 <fieldset class="customextrasFieldset">
                     <legend>Extras:</legend>
+                    <label for="test1">Lemming</label>
+                    <input type="checkbox" name="membership" value="I am a Member">
                 </fieldset>
 
                 <fieldset class="addedextrasFieldset">
                     <legend>Other:</legend>
+                    <label for="test1">I am a Member</label>
+                    <input type="checkbox" name="membership" value="I am a Member">
                 </fieldset>
+
+                <input type="submit" value="Submit">
             </form>
         </main>
         
