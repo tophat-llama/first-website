@@ -14,7 +14,7 @@ function handleSubmit(event) {
 
   console.log(`Name: ${name}`);
   console.log(`Email: ${email}`);
-  console.log(`Time: ${time}`)
+  console.log(`Time: ${time}`);
 
 // ORDER ITEMS LIST - DROPDOWN ARRAY JSON NONSENSE
   
@@ -35,8 +35,8 @@ function handleSubmit(event) {
   console.log(`Allergens: ${allergens}`); // Show the allergens
 
 // EXTRA ITEMS SECTION - CHECKBOXES AND TEXT
-  const milk = elements.milk.value
-  console.log(`Milk Type: ${milk}`)
+  const milk = elements.milk.value;
+  console.log(`Milk Type: ${milk}`);
 
   let extras = "";
   const extrasChecker = form.querySelectorAll('input[name="extras"]:checked');
@@ -54,10 +54,10 @@ function handleSubmit(event) {
 
 // MEMBERSHIP SECTION - COLOURBOX AND TEXT
   const color1 = elements.membership1.value;
-  console.log(`MembershipColor: ${color1}`)
+  console.log(`MembershipColor: ${color1}`);
 
   const color2 = elements.membership2.value;
-  console.log(`MembershipDeets: ${color2}`)
+  console.log(`MembershipDeets: ${color2}`);
 
 // END OF ORDER SECTION
     alert(`

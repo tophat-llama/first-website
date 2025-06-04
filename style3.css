@@ -56,3 +56,7 @@ header, footer {
 /* .navLine {
     background-color: rgb(43, 117, 75);
 } */
+
+h2 {
+    padding: 0.5em;
+}
