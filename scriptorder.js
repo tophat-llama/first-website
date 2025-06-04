@@ -17,6 +17,7 @@ function handleSubmit(event) {
   console.log(`Time: ${time}`)
 
 // ORDER ITEMS LIST - DROPDOWN ARRAY JSON NONSENSE
+  
 
 // ALLERGENS & REQUIREMENTS SECTION - CHECKBOXES
   let allergens = "";
@@ -72,14 +73,9 @@ function handleSubmit(event) {
     Extras: ${extras}
     --------------
     MembershipColor: ${color1}
-    MembershipColor: ${color2}
+    Other Notes: ${color2}
     `);
 }
 
 // EVENT LISTENER FOR FINAL SUBMIT BUTTON
 form.addEventListener("submit", handleSubmit);
-
-// function handleSubmit(event) {
-//     event.preventDefault(); // Prevent the default form submission behavior (which is the page reloading)
-//     alert("Thank you for submitting your order!");
-// }
