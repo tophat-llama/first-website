@@ -86,7 +86,7 @@
                             <label for="email">Email: </label>
                             <input type="email" name="email" size="30"><br>
                             <br>
-                            <input type="submit" name="submit">
+                            <input type="submit" id="karaokesubmit" name="karaokesubmit">
                         </form>
                     </div>
                 </div>
@@ -116,42 +116,42 @@
                 <section class="facItemContainer">
                     <h3>Expression Espresso</h3>
                     <p>Concentrated liquid squeezed through beans while the baristas contort their faces in horror.</p>
-                    <p>Price: 3.5 Bells</p>
+                    <p>Price: 1 Bells</p>
                     <p><b>Allergens</b>: Sunlight, High-energy Situations, Celery, BMW Paint.</p>
                 </section>
 
                 <section class="facItemContainer">
                     <h3>Cappucino</h3>
                     <p>Like espresso, but with lots of milk.</p><br>
-                    <p>Price: 7.48 Bells</p>
+                    <p>Price: 1 Bells</p>
                     <p><b>Allergens</b>: Milk.</p>
                 </section>
 
                 <section class="facItemContainer">
                     <h3>Cappucin Monkeys</h3>
                     <p>Something that will annoy that guy from Night at the Museum.</p>
-                    <p>Price: 8.88 Bells</p>
+                    <p>Price: 1 Bells</p>
                     <p><b>Allergens</b>: Monkey hair.</p>
                 </section>
 
                 <section class="facItemContainer">
                     <h3>Macchiato</h3>
                     <p>Coffee for people who like Apple products.</p>
-                    <p>Price: 10.5 Bells</p>
+                    <p>Price: 1 Bells</p>
                     <p><b>Allergens</b>: Avocado, the feeling of being percieved, meddling people who destroy your plans.</p>
                 </section>
 
                 <section class="facItemContainer">
                     <h3>Iced Monstrosity</h3>
                     <p>Only the purest, coldest drip coffee. Makes absolute zero look like a boil.</p>
-                    <p>Price: 27.315 Bells</p>
+                    <p>Price: 1 Bells</p>
                     <p><b>Allergens</b>: Cold.</p>
                 </section>
 
                 <section class="facItemContainer">
                     <h3>Americano</h3>
                     <p>Coffee made of burgers, snickerdoodles, trucks, and coors light.</p>
-                    <p>Price: 17.76 Bells</p>
+                    <p>Price: 1 Bells</p>
                     <p><b>Allergens</b>: Nuts, Celery, Secret Passwords, BMW Paint.</p>
                 </section>
             </section>
@@ -165,18 +165,26 @@
                 </form>
                 <form name="radio buttons">
                     <p>Which of our six most frequently asked-for drinks do you prefer?:</p>
-                    <input type="radio" name="radiotest" value="test1">
-                    <label for="test1">Expression Espresso</label><br>
-                    <input type="radio" name="radiotest" value="test1">
-                    <label for="test1">Cappucino</label><br>
-                    <input type="radio" name="radiotest" value="test1">
-                    <label for="test1">Cappucin Monkeys</label><br>
-                    <input type="radio" name="radiotest" value="test1">
-                    <label for="test1">Macchiato</label><br>
-                    <input type="radio" name="radiotest" value="test1">
-                    <label for="test1">Iced Monstrosity</label><br>
-                    <input type="radio" name="radiotest" value="test1">
-                    <label for="test1">Americano</label>
+                    <input type="radio" id="espresso" name="radiotest" value="Expression Espresso">
+                    <label for="espresso">Expression Espresso</label><br>
+
+                    <input type="radio" id="cappucino" name="radiotest" value="Cappucino">
+                    <label for="cappucino">Cappucino</label><br>
+
+                    <input type="radio" id="cappucinmonkeys" name="radiotest" value="Cappucin Monkeys">
+                    <label for="cappucinmonkeys">Cappucin Monkeys</label><br>
+
+                    <input type="radio" id="macchiato" name="radiotest" value="Macchiato">
+                    <label for="macchiato">Macchiato</label><br>
+
+                    <input type="radio" id="icedmonstrosity" name="radiotest" value="Iced Monstrosity">
+                    <label for="icedmonstrosity">Iced Monstrosity</label><br>
+
+                    <input type="radio" id="americano" name="radiotest" value="Americano">
+                    <label for="americano">Americano</label><br>
+
+                    <label for="coffeeprefsubmit">Make your vote:</label>
+                    <input type="button" id="coffeeprefsubmit" name="coffeeprefsubmit" value="SUBMIT">
                 </form>
             </section>
             <hr>
