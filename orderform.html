@@ -41,7 +41,7 @@
                     <input type="text" id="name" name="name"><br>
 
                     <label for="email">Email Address:</label><br>
-                    <input type="text" id="email" name="email"><br>
+                    <input type="text" id="email" name="email" pattern=".+@example\.com"><br>
 
                     <label for="time">When you wanna pickup your order:</label><br>
                     <input type="time" id="time" name="time"><br>
@@ -52,47 +52,53 @@
                     
                     <select id="orderOptionsDropdown" size="1">
                         <optgroup label="coffee">
-                            <option data-array='["Espresso", "1", "coffee", "vegetarian", "vegan", "kosher", "halal", "gluten", "eggs"]'>Espresso</option>
-                            <option data-array='["Cappucino", "1", "coffee", "vegetarian", "vegan", "sunlight"]'>Cappucino</option>
-                            <option data-array='["Cappucin Monkeys", "1", "coffee", "vegetarian", "kosher", "halal", "gluten", "eggs"]'>Cappucin Monkeys</option>
-                            <option data-array='["Macchiato", "1", "coffee", "vegetarian", "crustaceans", "fish", "molluscs", "sunlight"]'>Macchiato</option>
-                            <option data-array='["Iced Monstrosity", "1", "coffee", "vegetarian", "vegan", "kosher", "halal"]'>Iced Monstrosity</option>
-                            <option data-array='["Irish-Americano", "1", "coffee", "vegetarian", "vegan", "containsalcohol", "gluten", "eggs"]'>Irish-Americano</option>
-                            <option data-array='["Latte", "1", "coffee", "vegetarian", "sunlight", "socialsituations"]'>Latte</option>
-                            <option data-array='["Flat White", "1", "coffee", "vegetarian", "vegan", "sunlight", "socialsituations"]'>Flat White</option>
-                            <option data-array='["Blended Arugula", "1", "coffee", "vegetarian", "vegan", "containsalcohol", "lupin", "peanuts", "sesame", "treenuts"]'>Blended Arugula</option>
-                            <option data-array='["Flat Black", "1", "coffee", "vegan", "kosher", "halal", "gluten", "eggs"]'>Flat Black</option>
-                            <option data-array='["Ikea Style", "1", "coffee", "vegetarian", "vegan", "containsalcohol", "crustaceans", "fish", "molluscs"]'>Ikea Style</option>
-                            <option data-array='["Kopi Luwak", "1", "coffee", "vegetarian", "vegan", "gluten", "eggs", "sunlight", "socialsituations"]'>Kopi Luwak</option>
+                            <option class="menuitem" data-array='["Espresso", "1", "coffee", "vegetarian", "vegan", "kosher", "halal", "gluten", "eggs"]'>Espresso</option>
+                            <option class="menuitem" data-array='["Cappucino", "1", "coffee", "vegetarian", "vegan", "sunlight"]'>Cappucino</option>
+                            <option class="menuitem" data-array='["Cappucin Monkeys", "1", "coffee", "vegetarian", "kosher", "halal", "gluten", "eggs"]'>Cappucin Monkeys</option>
+                            <option class="menuitem" data-array='["Macchiato", "1", "coffee", "vegetarian", "crustaceans", "fish", "molluscs", "sunlight"]'>Macchiato</option>
+                            <option class="menuitem" data-array='["Iced Monstrosity", "1", "coffee", "vegetarian", "vegan", "kosher", "halal"]'>Iced Monstrosity</option>
+                            <option class="menuitem" data-array='["Irish-Americano", "1", "coffee", "vegetarian", "vegan", "containsalcohol", "gluten", "eggs"]'>Irish-Americano</option>
+                            <option class="menuitem" data-array='["Latte", "1", "coffee", "vegetarian", "sunlight", "socialsituations"]'>Latte</option>
+                            <option class="menuitem" data-array='["Flat White", "1", "coffee", "vegetarian", "vegan", "sunlight", "socialsituations"]'>Flat White</option>
+                            <option class="menuitem" data-array='["Blended Arugula", "1", "coffee", "vegetarian", "vegan", "containsalcohol", "lupin", "peanuts", "sesame", "treenuts"]'>Blended Arugula</option>
+                            <option class="menuitem" data-array='["Flat Black", "1", "coffee", "vegan", "kosher", "halal", "gluten", "eggs"]'>Flat Black</option>
+                            <option class="menuitem" data-array='["Ikea Style", "1", "coffee", "vegetarian", "vegan", "containsalcohol", "crustaceans", "fish", "molluscs"]'>Ikea Style</option>
+                            <option class="menuitem" data-array='["Kopi Luwak", "1", "coffee", "vegetarian", "vegan", "gluten", "eggs", "sunlight", "socialsituations"]'>Kopi Luwak</option>
                         </optgroup>
                         <hr>
                         <optgroup label="tea">
-                            <option data-array='["Oolong", "1", "tea", "vegetarian", "vegan", "kosher", "halal", "celery", "gluten", "eggs"]'>Oolong</option>
-                            <option data-array='["Oofar", "1", "tea", "vegetarian", "vegan", "lupin", "peanuts", "sesame", "treenuts"]'>Oofar</option>
-                            <option data-array='["Oowhereveryouare", "1", "tea", "vegetarian", "vegan", "containsalcohol", "gluten", "eggs"]'>Oowhereveryouare</option>
-                            <option data-array='["Tea, Earl Grey, Hot", "1", "tea", "vegetarian", "vegan", "containsalcohol", "lupin", "peanuts", "sesame", "treenuts"]'>Tea, Earl Grey, Hot</option>
-                            <option data-array='["Coffee-Tea-Blend", "1", "tea", "vegetarian", "vegan", "kosher", "halal"]'>Coffee-Tea-Blend</option>
-                            <option data-array='["Actually just basil", "1", "tea", "vegetarian", "soybeans", "mustard", "treenuts"]'>Actually just basil</option>
-                            <option data-array='["Water, Hold the Leaves", "1", "tea", "vegetarian", "vegan", "containsalcohol", "crustaceans", "fish", "molluscs"]'>Water, Hold the Leaves</option>
-                            <option data-array='["Tom Yam Kai", "1", "tea", "kosher", "halal", "celery", "gluten", "eggs"]'>Tom Yam Kai</option>
-                            <option data-array='["Ghost Souls", "1", "tea", "vegetarian", "vegan", "lupin", "peanuts", "sesame", "treenuts"]'>Ghost Souls</option>
+                            <option class="menuitem" data-array='["Oolong", "1", "tea", "vegetarian", "vegan", "kosher", "halal", "celery", "gluten", "eggs"]'>Oolong</option>
+                            <option class="menuitem" data-array='["Oofar", "1", "tea", "vegetarian", "vegan", "lupin", "peanuts", "sesame", "treenuts"]'>Oofar</option>
+                            <option class="menuitem" data-array='["Oowhereveryouare", "1", "tea", "vegetarian", "vegan", "containsalcohol", "gluten", "eggs"]'>Oowhereveryouare</option>
+                            <option class="menuitem" data-array='["Tea, Earl Grey, Hot", "1", "tea", "vegetarian", "vegan", "containsalcohol", "lupin", "peanuts", "sesame", "treenuts"]'>Tea, Earl Grey, Hot</option>
+                            <option class="menuitem" data-array='["Coffee-Tea-Blend", "1", "tea", "vegetarian", "vegan", "kosher", "halal"]'>Coffee-Tea-Blend</option>
+                            <option class="menuitem" data-array='["Actually just basil", "1", "tea", "vegetarian", "soybeans", "mustard", "treenuts"]'>Actually just basil</option>
+                            <option class="menuitem" data-array='["Water, Hold the Leaves", "1", "tea", "vegetarian", "vegan", "containsalcohol", "crustaceans", "fish", "molluscs"]'>Water, Hold the Leaves</option>
+                            <option class="menuitem" data-array='["Tom Yam Kai", "1", "tea", "kosher", "halal", "celery", "gluten", "eggs"]'>Tom Yam Kai</option>
+                            <option class="menuitem" data-array='["Ghost Souls", "1", "tea", "vegetarian", "vegan", "lupin", "peanuts", "sesame", "treenuts"]'>Ghost Souls</option>
                         </optgroup>
                         <hr>
                         <optgroup label="misc">
-                            <option data-array='["Water", "1", "misc", "vegetarian", "vegan", "containsalcohol", "celery"]'>Water</option>
-                            <option data-array='["Gruel", "1", "misc", "vegetarian", "vegan", "gluten", "eggs", "lupin", "peanuts", "sesame", "treenuts"]'>Gruel</option>
-                            <option data-array='["Minced Cucumber Pulp", "1", "misc", "vegetarian", "vegan", "kosher", "halal", "celery", "soybeans", "mustard", "treenuts"]'>Minced Cucumber Pulp</option>
+                            <option class="menuitem" data-array='["Water", "1", "misc", "vegetarian", "vegan", "containsalcohol", "celery"]'>Water</option>
+                            <option class="menuitem" data-array='["Gruel", "1", "misc", "vegetarian", "vegan", "gluten", "eggs", "lupin", "peanuts", "sesame", "treenuts"]'>Gruel</option>
+                            <option class="menuitem" data-array='["Minced Cucumber Pulp", "1", "misc", "vegetarian", "vegan", "kosher", "halal", "celery", "soybeans", "mustard", "treenuts"]'>Minced Cucumber Pulp</option>
                         </optgroup>
                     </select>
 
                     <label for="add">Add Selected Item:</label>
                     <button type="button" id="add" name="add">+</button>
+
                     <label for="remove">  Remove Selected Item:</label>
                     <button type="button" id="remove" name="remove">-</button>
 
+                    <label for="pricetotal">  Total Price:</label>
+                    <button type="button" id="pricetotal" name="pricetotal">Bl</button>
+                    
                     <ol id="orderlist">
                         <li></li>
                     </ol>
+
+                    <p><b>Total: </b><span id="total"> Bells</span></p>
 
                 </fieldset>
                 <br>

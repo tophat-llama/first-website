@@ -18,6 +18,9 @@ function handleSubmit(event) {
 
 // ORDER ITEMS LIST - DROPDOWN ARRAY JSON NONSENSE
   
+  
+// ORDER ITEMS LIST - PRICE TOTAL BUTTON
+  
 
 // ALLERGENS & REQUIREMENTS SECTION - CHECKBOXES
   let allergens = "";
