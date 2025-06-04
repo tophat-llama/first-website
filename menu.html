@@ -10,7 +10,7 @@
         <meta name="keywords" content="">
         
         <link rel="stylesheet" href="style2.css">
-        <script src="script.js" async></script>
+        <script src="scriptmenu.js" async></script>
     </head>
     <body>
         <header>
@@ -19,136 +19,217 @@
             </section>
 
             <ul class="navbarULContainer">
-                <li class="navLink"><a href="www.google.co.uk">NAV1</a></li>
+                <li class="navLink"><a href="index.html">HOMEPAGE</a></li>
                 <li class="navLine">|</li>
-                <li class="navLink"><a href="www.google.co.uk">NAV2</a></li>
+                <li class="navLink"><a href="menu.html">OUR MENU</a></li>
                 <li class="navLine">|</li>
-                <li class="navLink"><a href="www.google.co.uk">NAV3</a></li>
+                <li class="navLink"><a href="orderform.html">ORDER FORM</a></li>
                 <li class="navLine">|</li>
-                <li class="navLink"><a href="www.google.co.uk">CHANGE MODE</a></li>
+                <li class="navLink"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CHANGE MODE JS</a></li>
             </ul>
             
         </header>
 
+        <section class="menuIntroContainer">
+            <h2>In the Name of the Father, The Son, and the Holy Roast</h2>
+            <p>This is our menu and it is Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi est error reiciendis numquam totam, atque quod animi, corrupti perferendis commodi excepturi enim magni earum illo mollitia fugiat reprehenderit nam velit!</p>
+            <p>Please, select your allergens and dietary requirements below to narrow down your order.</p>
+            <div class="filterInCheckboxBlock">
+                <label><input class="filter-checkbox2" type="checkbox" value="coffee"> Coffee</label>
+                <label><input class="filter-checkbox2" type="checkbox" value="tea"> Tea</label>
+                <label><input class="filter-checkbox2" type="checkbox" value="misc"> Other Hot Drinks</label>
+                <hr>
+                <label><input class="filter-checkbox2" type="checkbox" value="vegetarian"> Vegetarian</label>
+                <label><input class="filter-checkbox2" type="checkbox" value="vegan"> Vegan</label>
+                <label><input class="filter-checkbox2" type="checkbox" value="kosher"> Kosher</label>
+                <label><input class="filter-checkbox2" type="checkbox" value="halal"> Halal</label>
+                <hr> 
+            <div class="filterOutCheckboxBlock">
+                <label><input class="filter-checkbox1" type="checkbox" value="containsalcohol"> Contains Alcohol</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="celery"> Celery</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="gluten"> Gluten</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="crustaceans"> Crustaceans</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="eggs"> Eggs</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="fish"> Fish</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="lupin"> Lupin</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="milk"> Milk</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="molluscs"> Molluscs</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="mustard"> Mustard</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="peanuts"> Peanuts</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="sesame"> Sesame</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="soybeans"> Soybeans</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="sulphurs"> Sulphur Dioxide & Sulphides</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="treenuts"> Tree Nuts</label><br>
+                <label><input class="filter-checkbox1" type="checkbox" value="sunlight"> Sunlight</label>
+                <label><input class="filter-checkbox1" type="checkbox" value="socialsituations"> Social Situations</label>
+            </div>   
+        </section> 
+
         <main class="flexMainContainer">
             <hr>
-            <!-- ===== MENU INTRO ===== -->
-            <section class="menuIntroContainer">
-                <p>This is our menu and it is Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi est error reiciendis numquam totam, atque quod animi, corrupti perferendis commodi excepturi enim magni earum illo mollitia fugiat reprehenderit nam velit!</p>
-            </section>
-
             <!-- ===== SECTION INTRO ===== -->
             <section class="menuSectionIntroContainer">
+                <h2>Various Coffees</h2>
                 <p>If you adore the holy lord that is our great God coffee, then Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi est error reiciendis numquam totam, atque quod animi, corrupti perferendis commodi excepturi enim magni earum illo mollitia fugiat reprehenderit nam velit!</p>
             </section>
 
             <!-- ===== MENU ITEMS BELOW ===== -->
-            <section class="menuItemContainer">
+            <section class="menuItemContainer coffee vegetarian vegan kosher halal gluten eggs">
                 <h3>Espresso</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Kosher and Halal. Gluten & Eggs.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer coffee vegetarian vegan sunlight">
                 <h3>Cappucino</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Anti-Sunlight.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer coffee vegetarian kosher halal gluten eggs">
                 <h3>Cappucin Monkeys</h3>
+                <p>1 Bell</p>
+                <p>Not Vegan. Kosher and Halal. Gluten & Eggs.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer coffee vegetarian crustaceans fish molluscs sunlight">
                 <h3>Macchiato</h3>
+                <p>1 Bell</p>
+                <p>Not Vegan. Very fishy. Anti Sunlight.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer coffee vegetarian vegan kosher halal">
                 <h3>Iced Monstrosity</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Kosher and Halal.</p>
             </section>
 
-            <section class="menuItemContainer">
-                <h3>Americano</h3>
+            <section class="menuItemContainer coffee vegetarian vegan containsalcohol gluten eggs">
+                <h3>Irish-Americano</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Contains Alcohol. Gluten & Eggs.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer coffee vegetarian sunlight socialsituations">
                 <h3>Latte</h3>
+                <p>1 Bell</p>
+                <p>Vegetarianish. Anti Sunlight & Social Situations.</p>
             </section>
-
-            <section class="menuItemContainer">
+        
+            <section class="menuItemContainer coffee vegetarian vegan sunlight socialsituations">
                 <h3>Flat White</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Anti Sunlight & Social Situations.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer coffee vegetarian vegan containsalcohol lupin peanuts sesame treenuts">
                 <h3>Blended Arugula</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Contains Alcohol. Mega nutty, with legumes.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer coffee vegan kosher halal gluten eggs">
                 <h3>Flat Black</h3>
+                <p>1 Bell</p>
+                <p>Vegan. Kosher and Halal. Gluten & Egg.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer coffee vegetarian vegan containsalcohol crustaceans fish molluscs">
                 <h3>Ikea Style</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Contains Alcohol. Mega fishy.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer coffee vegetarian vegan gluten eggs sunlight socialsituations">
                 <h3>Kopi Luwak</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Gluten & Eggs. Anti-Sunlight & Social Situations.</p>
             </section>
 
             <!-- ===== SECTION INTRO ===== -->
             <section class="menuSectionIntroContainer">
+                <h2>Tea</h2>
                 <p>If you're a syncretic devotee, you may prefer Tea and Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi est error reiciendis numquam totam, atque quod animi, corrupti perferendis commodi excepturi enim magni earum illo mollitia fugiat reprehenderit nam velit!</p>
             </section>
             
             <!-- ===== MENU ITEMS BELOW ===== -->
-            <section class="menuItemContainer">
+            <section class="menuItemContainer tea vegetarian vegan kosher halal celery gluten eggs">
                 <h3>Oolong</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Kosher and Halal. Celery. Gluten & Eggs.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer tea vegetarian vegan lupin peanuts sesame treenuts">
                 <h3>Oofar</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Mega Nutty, with Legumes.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer tea vegetarian vegan containsalcohol gluten eggs">
                 <h3>Oowhereveryouare</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Contains Alcohol. Gluten & Eggs.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer tea vegetarian vegan containsalcohol lupin peanuts sesame treenuts">
                 <h3>Tea, Earl Grey, Hot</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Contains Alcohol. Mega Nutty plus Legumes.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer tea vegetarian vegan kosher halal">
                 <h3>Coffee-Tea-Blend</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Kosher and Halal.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer tea vegetarian soybeans mustard treenuts">
                 <h3>Actually just basil</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian. Soybeans, Mustard, Treenuts.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer tea vegetarian vegan containsalcohol crustaceans fish molluscs">
                 <h3>Water, Hold the Leaves</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Contains Alcohol. Fish in water?</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer tea kosher halal celery gluten eggs">
                 <h3>Tom Yam Kai</h3>
+                <p>1 Bell</p>
+                <p>Not Vegetarian or Vegan. Kosher and Halal. Celery. Gluten & Eggs.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer tea vegetarian vegan lupin peanuts sesame treenuts">
                 <h3>Ghost Souls</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Mega Nutty plus Legumes.</p>
             </section>
 
             <!-- ===== SECTION INTRO ===== -->
             <section class="menuSectionIntroContainer">
+                <h2>Miscellaneous Drinks</h2>
                 <p>If you are a heretic and don't like either, then Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi est error reiciendis numquam totam, atque quod animi, corrupti perferendis commodi excepturi enim magni earum illo mollitia fugiat reprehenderit nam velit!</p>
             </section>
             
             <!-- ===== MENU ITEMS BELOW ===== -->
-            <section class="menuItemContainer">
+            <section class="menuItemContainer misc vegetarian vegan containsalcohol celery">
                 <h3>Water</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Contains Alcohol. Celery.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer misc vegetarian vegan gluten eggs lupin peanuts sesame treenuts">
                 <h3>Gruel</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Gluten & Eggs. Mega Nutty plus Legumes.</p>
             </section>
 
-            <section class="menuItemContainer">
+            <section class="menuItemContainer misc vegetarian vegan kosher halal celery soybeans mustard treenuts">
                 <h3>Minced Cucumber Pulp</h3>
+                <p>1 Bell</p>
+                <p>Vegetarian, Vegan. Kosher and Halal. Celery. Soybeans, Mustard, Treenuts.</p>
             </section>
 
         </main>

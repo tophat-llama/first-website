@@ -10,7 +10,7 @@
         <meta name="keywords" content="">
         
         <link rel="stylesheet" href="style3.css">
-        <script src="script.js" async></script>
+        <script src="scriptorder.js" async></script>
     </head>
     <body>
         <header>
@@ -19,39 +19,154 @@
             </section>
 
             <ul class="navbarULContainer">
-                <li class="navLink"><a href="www.google.co.uk">NAV1</a></li>
+                <li class="navLink"><a href="index.html">HOMEPAGE</a></li>
                 <li class="navLine">|</li>
-                <li class="navLink"><a href="www.google.co.uk">NAV2</a></li>
+                <li class="navLink"><a href="menu.html">OUR MENU</a></li>
                 <li class="navLine">|</li>
-                <li class="navLink"><a href="www.google.co.uk">NAV3</a></li>
+                <li class="navLink"><a href="orderform.html">ORDER FORM</a></li>
                 <li class="navLine">|</li>
-                <li class="navLink"><a href="www.google.co.uk">CHANGE MODE</a></li>
+                <li class="navLink"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CHANGE MODE JS</a></li>
             </ul>
             
         </header>
 
         <main class="mainContainer">
-            <form class="formMainContainer">
+            <h2>In the Name of the Father, The Son, and the Holy Roast</h2>
+            <form action="#" method="post" name="orderForm" class="formMainContainer">
+                <br>
                 <fieldset class="personaldetailsFieldset">
                     <legend>Your Details:</legend>
-                    
-                </fieldset>
+                    <p>NEXT DAY ORDERS ONLY - LINEAR TIME IS INEFFABLE AT LONGER DISTANCES AND INSURANCE WON'T COVER US FOR IT.</p>
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
 
+                    <label for="email">Email Address:</label><br>
+                    <input type="text" id="email" name="email" pattern=".+@example\.com"><br>
+
+                    <label for="time">When you wanna pickup your order:</label><br>
+                    <input type="time" id="time" name="time"><br>
+                </fieldset>
+                <br>
                 <fieldset class="orderbasketFieldset">
                     <legend>Your Order:</legend>
-                </fieldset>
+                    
+                    <select id="orderOptionsDropdown" size="1">
+                        <optgroup label="coffee">
+                            <option class="menuitem" data-array='["Espresso", "1", "coffee", "vegetarian", "vegan", "kosher", "halal", "gluten", "eggs"]'>Espresso</option>
+                            <option class="menuitem" data-array='["Cappucino", "1", "coffee", "vegetarian", "vegan", "sunlight"]'>Cappucino</option>
+                            <option class="menuitem" data-array='["Cappucin Monkeys", "1", "coffee", "vegetarian", "kosher", "halal", "gluten", "eggs"]'>Cappucin Monkeys</option>
+                            <option class="menuitem" data-array='["Macchiato", "1", "coffee", "vegetarian", "crustaceans", "fish", "molluscs", "sunlight"]'>Macchiato</option>
+                            <option class="menuitem" data-array='["Iced Monstrosity", "1", "coffee", "vegetarian", "vegan", "kosher", "halal"]'>Iced Monstrosity</option>
+                            <option class="menuitem" data-array='["Irish-Americano", "1", "coffee", "vegetarian", "vegan", "containsalcohol", "gluten", "eggs"]'>Irish-Americano</option>
+                            <option class="menuitem" data-array='["Latte", "1", "coffee", "vegetarian", "sunlight", "socialsituations"]'>Latte</option>
+                            <option class="menuitem" data-array='["Flat White", "1", "coffee", "vegetarian", "vegan", "sunlight", "socialsituations"]'>Flat White</option>
+                            <option class="menuitem" data-array='["Blended Arugula", "1", "coffee", "vegetarian", "vegan", "containsalcohol", "lupin", "peanuts", "sesame", "treenuts"]'>Blended Arugula</option>
+                            <option class="menuitem" data-array='["Flat Black", "1", "coffee", "vegan", "kosher", "halal", "gluten", "eggs"]'>Flat Black</option>
+                            <option class="menuitem" data-array='["Ikea Style", "1", "coffee", "vegetarian", "vegan", "containsalcohol", "crustaceans", "fish", "molluscs"]'>Ikea Style</option>
+                            <option class="menuitem" data-array='["Kopi Luwak", "1", "coffee", "vegetarian", "vegan", "gluten", "eggs", "sunlight", "socialsituations"]'>Kopi Luwak</option>
+                        </optgroup>
+                        <hr>
+                        <optgroup label="tea">
+                            <option class="menuitem" data-array='["Oolong", "1", "tea", "vegetarian", "vegan", "kosher", "halal", "celery", "gluten", "eggs"]'>Oolong</option>
+                            <option class="menuitem" data-array='["Oofar", "1", "tea", "vegetarian", "vegan", "lupin", "peanuts", "sesame", "treenuts"]'>Oofar</option>
+                            <option class="menuitem" data-array='["Oowhereveryouare", "1", "tea", "vegetarian", "vegan", "containsalcohol", "gluten", "eggs"]'>Oowhereveryouare</option>
+                            <option class="menuitem" data-array='["Tea, Earl Grey, Hot", "1", "tea", "vegetarian", "vegan", "containsalcohol", "lupin", "peanuts", "sesame", "treenuts"]'>Tea, Earl Grey, Hot</option>
+                            <option class="menuitem" data-array='["Coffee-Tea-Blend", "1", "tea", "vegetarian", "vegan", "kosher", "halal"]'>Coffee-Tea-Blend</option>
+                            <option class="menuitem" data-array='["Actually just basil", "1", "tea", "vegetarian", "soybeans", "mustard", "treenuts"]'>Actually just basil</option>
+                            <option class="menuitem" data-array='["Water, Hold the Leaves", "1", "tea", "vegetarian", "vegan", "containsalcohol", "crustaceans", "fish", "molluscs"]'>Water, Hold the Leaves</option>
+                            <option class="menuitem" data-array='["Tom Yam Kai", "1", "tea", "kosher", "halal", "celery", "gluten", "eggs"]'>Tom Yam Kai</option>
+                            <option class="menuitem" data-array='["Ghost Souls", "1", "tea", "vegetarian", "vegan", "lupin", "peanuts", "sesame", "treenuts"]'>Ghost Souls</option>
+                        </optgroup>
+                        <hr>
+                        <optgroup label="misc">
+                            <option class="menuitem" data-array='["Water", "1", "misc", "vegetarian", "vegan", "containsalcohol", "celery"]'>Water</option>
+                            <option class="menuitem" data-array='["Gruel", "1", "misc", "vegetarian", "vegan", "gluten", "eggs", "lupin", "peanuts", "sesame", "treenuts"]'>Gruel</option>
+                            <option class="menuitem" data-array='["Minced Cucumber Pulp", "1", "misc", "vegetarian", "vegan", "kosher", "halal", "celery", "soybeans", "mustard", "treenuts"]'>Minced Cucumber Pulp</option>
+                        </optgroup>
+                    </select>
 
+                    <label for="add">Add Selected Item:</label>
+                    <button type="button" id="add" name="add">+</button>
+
+                    <label for="remove">  Remove Selected Item:</label>
+                    <button type="button" id="remove" name="remove">-</button>
+
+                    <label for="pricetotal">  Total Price:</label>
+                    <button type="button" id="pricetotal" name="pricetotal">Bl</button>
+                    
+                    <ol id="orderlist">
+                        <li></li>
+                    </ol>
+
+                    <p><b>Total: </b><span id="total"> Bells</span></p>
+
+                </fieldset>
+                <br>
                 <fieldset class="allergensFieldset">
                     <legend>Allergens:</legend>
+                    <p>Please mention your allergies so we can double-check your order and prep our workspaces.</p>
+                    <div class="filtercheckboxBlock">
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="vegetarian"> Vegetarian</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="vegan"> Vegan</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="kosher"> Kosher</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="halal"> Halal</label>
+                        <hr> 
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="containsalcohol"> Contains Alcohol</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="celery"> Celery</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="gluten"> Gluten</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="crustaceans"> Crustaceans</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="eggs"> Eggs</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="fish"> Fish</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="lupin"> Lupin</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="milk"> Milk</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="molluscs"> Molluscs</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="mustard"> Mustard</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="peanuts"> Peanuts</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="sesame"> Sesame</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="soybeans"> Soybeans</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="sulphurs"> Sulphur Dioxide & Sulphides</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="treenuts"> Tree Nuts</label><br>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="sunlight"> Sunlight</label>
+                        <label for="checkbox"><input class="filter-checkbox" name="allergens" type="checkbox" value="socialsituations"> Social Situations</label>
+                    </div>   
                 </fieldset>
-
+                <br>
                 <fieldset class="customextrasFieldset">
                     <legend>Extras:</legend>
-                </fieldset>
+                    <label for="extras">Lemming</label>
+                    <input type="checkbox" name="extras" value="lemming">
 
+                    <label for="extras">Cinnamon</label>
+                    <input type="checkbox" name="extras" value="cinnamon">
+
+                    <label for="extras">Extra Shot</label>
+                    <input type="checkbox" name="extras" value="extrashot">
+
+                    <label for="extras">Irish</label>
+                    <input type="checkbox" name="extras" value="irish">
+
+                    <label for="extras">Marshmellows</label>
+                    <input type="checkbox" name="extras" value="marshmellows">
+
+                    <label for="extras">Salt</label>
+                    <input type="checkbox" name="extras" value="salt"><br>
+
+                    <label for="milk">Alternative Milk Types:</label>
+                    <input type="text" name="milk" value="Alt!Milks">
+                </fieldset>
+                <br>
                 <fieldset class="addedextrasFieldset">
                     <legend>Other:</legend>
+                    <label for="membership1">My membership colour level is-</label>
+                    <input type="color" name="membership1" value="#555555"><br>
+                    <label for="membership2">Any other details:</label>
+                    <input type="text" name="membership2" value="ftagn ftagn Cthulhu ftagn">
                 </fieldset>
+                <br>
+                <fieldset>
+                    <button type="submit">SUBMIT ORDER</button>
+                </fieldset>
+                <br>
             </form>
         </main>
         
